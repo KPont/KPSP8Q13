@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="examExercise">
+<head lang="en">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="vendor/bootstrap.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <script src="vendor/angular.js"></script>
+  <script src="app.js"></script>
+  <title></title>
+</head>
+<body ng-controller="MyCtrl1">
+
+<h2>{{msg}}</h2>
+<p>Insert your Angular Table here</p>
+<table>
+    <thead>
+
+<tr>
+        <th>ID</th>
+        <th>AGE</th>
+        <th>Eye Color</th>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Email</th>
+</tr>
+<tr ng-repeat="issue in data.issues">
+    <td>{{issue[0].id}}</td>
+    <td>{{issue[0].age}}</td>
+    <td>{{issue[0].eyeColor}}</td>
+    <td>{{issue[0].name}}</td>
+    <td>{{issue[0].gender}}</td>
+    <td>{{issue[0].email}}</td>
+</tr>
+    </thead>
+</table>
+
+<a href="/">Back</a>
+
+</body>
+</html>

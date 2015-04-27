@@ -1,0 +1,63 @@
+extends layout
+block content
+   h3 #{introText}
+
+
+       table(border="1" )
+           thead
+           th ID
+           th AGE
+           th Eye Color
+           th Name
+           th Gender
+           th Email
+           tr
+           td #{members[0].id}
+           td #{members[0].age}
+           td #{members[0].eyeColor}
+           td #{members[0].name}
+           td #{members[0].gender}
+           td #{members[0].email}
+               tr
+           td #{members[1].id}
+           td #{members[1].age}
+           td #{members[1].eyeColor}
+           td #{members[1].name}
+           td #{members[1].gender}
+           td #{members[1].email}
+               tr
+           td #{members[2].id}
+           td #{members[2].age}
+           td #{members[2].eyeColor}
+           td #{members[2].name}
+           td #{members[2].gender}
+           td #{members[2].email}
+           tr
+           td #{members[3].id}
+           td #{members[3].age}
+           td #{members[3].eyeColor}
+           td #{members[3].name}
+           td #{members[3].gender}
+           td #{members[3].email}
+           tr
+           td #{members[4].id}
+           td #{members[4].age}
+           td #{members[4].eyeColor}
+           td #{members[4].name}
+           td #{members[4].gender}
+           td #{members[4].email}
+           tr
+           td #{members[5].id}
+           td #{members[5].age}
+           td #{members[5].eyeColor}
+           td #{members[5].name}
+           td #{members[5].gender}
+           td #{members[5].email}
+       tbody
+
+
+
+
+
+   a(href="/") Back
+
